@@ -30,7 +30,7 @@ from fastapi.responses import FileResponse, HTMLResponse
 from dotenv import load_dotenv
 
 # When .env file is present, it will override the environment variables
-load_dotenv(dotenv_path="../.env", override=True)
+load_dotenv(dotenv_path=".env", override=True)
 
 app = FastAPI()
 
