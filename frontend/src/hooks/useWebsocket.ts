@@ -15,7 +15,7 @@ export function useWebsocket({
   url =
     url ??
     process.env.NEXT_PUBLIC_WEBSOCKET_ENDPOINT ??
-    "ws://9.208.6.64:8000/ws";
+    "wss://9.208.6.64:8000/ws";
   const [isReady, setIsReady] = useState(false);
   const [history, setHistory] = useState<Message[]>([]);
   const [agentName, setAgentName] = useState<string | null>(null);
