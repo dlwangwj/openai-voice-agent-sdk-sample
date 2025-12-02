@@ -67,3 +67,9 @@ You are welcome to open issues or submit PRs to improve this app, however, pleas
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## cert
+mkdir certs
+openssl req -x509 -newkey rsa:4096 -nodes \
+  -keyout certs/server.key -out certs/server.crt -days 365 \
+  -subj "/CN=localhost"
