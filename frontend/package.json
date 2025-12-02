@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev1": "node server.js",
     "dev:next": "next dev --turbo",
     "dev:server": "cd ../server && uv run server.py",
     "dev": "concurrently \"npm run dev:next\" \"npm run dev:server\"",
